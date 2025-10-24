@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
-
+import './App.css';
 // This is a separate component for a single todo item
 function TodoItem({ todo, index, completeTodo, removeTodo }) {
   return (
