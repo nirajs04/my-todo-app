@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// src/App.js
 import './App.css';
 
+// This is the main App component
 function App() {
+  // We will add the list of todos here later
+  const todos = [
+    { text: 'Learn React', isCompleted: false },
+    { text: 'Build portfolio project', isCompleted: false },
+    { text: 'Apply for job', isCompleted: false },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="todo-list">
+        <h1>My To-Do List</h1>
+        {/* We will map over the todos here later */}
+      </div>
     </div>
   );
 }
